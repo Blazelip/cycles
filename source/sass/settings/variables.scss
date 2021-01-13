@@ -1,0 +1,20 @@
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+$mobile-width-only: 767px;
+$tablet-width-only: 1023px;
+
+$screen-mobile: (max-width: $mobile-width-only);
+$screen-tablet: (max-width: $tablet-width-only);
+
+$white: #ffffff;
+$black: #000000;
+$dark: #1f1f1f;
+$dark-2: #131314;
+$cyan: #0ad9c6;
+
+$default-font: "Open Sans", "Verdana", sans-serif;
+
+$long-transition: 0.4s;
+$short-transition: 0.2s;
