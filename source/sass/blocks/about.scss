@@ -1,0 +1,37 @@
+.about {
+  h2 {
+    @include fz-lh(30px, 100%);
+
+    margin: 0;
+
+    font-weight: 600;
+    text-align: center;
+
+    @media #{$screen-tablet} {
+      @include fz-lh(24px, 171%);
+    }
+  }
+}
+
+.about__list {
+
+}
+
+.about__item {
+  @include fz-lh(22px, 155%);
+
+  letter-spacing: -0.5px;
+
+  span {
+    @include fz-lh(28px, 136%);
+
+    color: $feature-number;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -1.3px;
+
+    @media #{$screen-mobile} {
+      font-size: 18px;
+    }
+  }
+}

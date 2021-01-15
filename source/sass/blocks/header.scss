@@ -1,0 +1,64 @@
+.header {
+  background-color: $background-safe;
+  background-image: url("../../img/background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background@2x.jpg");
+  }
+}
+
+.header__nav {
+}
+
+.header__about {
+  h1 {
+    @include fz-lh(46px, 139%);
+
+    margin: 0;
+
+    font-weight: 700;
+    color: $common-text-white;
+
+    @media #{$screen-tablet} {
+      @include fz-lh(30px, 140%);
+    }
+  }
+
+  p {
+    @include fz-lh(20px, 160%);
+
+    margin: 0;
+
+    font-weight: 300;
+    color: rgba($common-text-white, 0.8);
+
+    @media #{$screen-tablet} {
+      @include fz-lh(18px, 178%);
+    }
+  }
+}
+
+.header__logo {
+
+}
+
+.header__write-us {
+  p {
+    @include fz-lh(17px, 165%);
+
+    margin: 0;
+
+    font-weight: 600;
+    text-align: center;
+    color: $common-text-white;
+
+    @media #{$screen-tablet} {
+      @include fz-lh(18px, 156%);
+
+      color: $common-text;
+    }
+  }
+}

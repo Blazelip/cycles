@@ -11,8 +11,21 @@ $screen-tablet: (max-width: $tablet-width-only);
 $white: #ffffff;
 $black: #000000;
 $dark: #1f1f1f;
-$dark-2: #131314;
+$darker: #131314;
 $cyan: #0ad9c6;
+
+$common-text: $black;
+$common-text-white: $white;
+$background-safe: $darker;
+$placeholder-color: #1c1c1c;
+$input-border-color: #c9ccd4;
+$btn-bacgkround: $cyan;
+$title-text: $dark;
+$feature-number: $cyan;
+$mobile-menu-items: #48494d;
+$mobile-menu-items-bg: #f6f6f6;
+$toggle-bg: $cyan;
+$close-cross-color: #141517;
 
 $default-font: "Open Sans", "Verdana", sans-serif;
 

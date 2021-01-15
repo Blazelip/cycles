@@ -5,3 +5,30 @@
 @import "settings/variables.scss";
 @import "settings/mixins.scss";
 @import "settings/global.scss";
+
+// GLOBAL
+
+@import "blocks/page.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/list.scss";
+@import "blocks/button.scss";
+
+// HEADER
+
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/logo.scss";
+@import "blocks/write-us.scss";
+
+// MAIN
+
+@import "blocks/about.scss";
+@import "blocks/catalog.scss";
+@import "blocks/video.scss";
+
+// FOOTER
+
+@import "blocks/footer.scss";
+@import "blocks/map.scss";
+@import "blocks/contacts.scss";

@@ -1,0 +1,38 @@
+.footer {
+  h2 {
+    @include fz-lh(30px, 100%);
+
+    margin: 0;
+
+    color: $title-text;
+    font-weight: 600;
+    text-align: center;
+
+    @media #{$screen-tablet} {
+      @include fz-lh(24px, 125%);
+    }
+
+    @media #{$screen-tablet} {
+      @include fz-lh(18px, 167%);
+    }
+  }
+
+  p {
+    @include fz-lh(17px, 182%);
+
+    margin: 0;
+
+    color: rgba($common-text, 0.7);
+    text-align: center;
+  }
+}
+
+.footer__map {
+  img {
+    display: block;
+  }
+}
+
+.footer__contacts {
+
+}

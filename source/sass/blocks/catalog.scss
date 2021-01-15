@@ -1,0 +1,39 @@
+.catalog {
+  h2 {
+    @include fz-lh(30px, 100%);
+
+    margin: 0;
+
+    font-weight: 600;
+    text-align: center;
+
+    @media #{$screen-tablet} {
+      @include fz-lh(24px, 171%);
+    }
+  }
+}
+
+.catalog__list {
+
+}
+
+.catalog__item {
+
+}
+
+.catalog__link {
+  img {
+
+  }
+
+  h3 {
+    @include fz-lh(22px, 155%);
+
+    margin: 0;
+
+    color: $common-text;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+}

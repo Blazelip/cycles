@@ -1,0 +1,37 @@
+.video {
+  background-color: $background-safe;
+
+  h2 {
+    @include fz-lh(30px, 100%);
+
+    margin: 0;
+
+    color: $common-text-white;
+    font-weight: 600;
+    text-align: center;
+
+    @media #{$screen-tablet} {
+      @include fz-lh(24px, 125%);
+    }
+  }
+
+  p {
+    @include fz-lh(16px, 175%);
+    margin: 0;
+
+    font-weight: 300;
+    text-align: center;
+    color: rgba($common-text-white, 0.7);
+  }
+}
+
+.video__container {
+
+  img {
+    display: block;
+  }
+}
+
+.video__button {
+
+}

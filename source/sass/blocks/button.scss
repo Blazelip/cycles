@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+
+  padding: 0;
+
+  font: inherit;
+  vertical-align: middle;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &--main {
+    @include fz-lh(15px, 140%);
+
+    color: $common-text;
+    font-weight: 600;
+    text-align: center;
+
+    background-color: $btn-bacgkround;
+    border-radius: 6px;
+  }
+}

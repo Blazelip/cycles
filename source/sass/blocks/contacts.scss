@@ -1,0 +1,23 @@
+.contacts {
+  line-height: 22px;
+}
+
+.contacts__item {
+
+}
+
+.contacts__link {
+  color: rgba($common-text, 0.5);
+
+  &--phone {
+    line-height: 200%;
+  }
+
+  svg {
+
+  }
+
+  span {
+
+  }
+}

@@ -13,29 +13,28 @@
   <link rel="preload" href="fonts/open-sans-bold.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page-body">
+<body class="page">
   <header class="header">
+    <nav class="header__nav menu menu--closed menu--noj">
+      <ul class="menu__list list list--resetted">
+        <li class="menu__item">
+          <a class="menu__link" href="#">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Виды велосипедов</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Видео про велосипеды</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <button type="button" class="menu__toggle button" aria-label="Открыть меню"></button>
+    </nav>
+
     <div class="wrapper">
-      <nav class="header__nav menu">
-        <ul class="menu__list list list--resetted">
-          <li class="menu__item">
-            <a class="menu__link" href="#">О нас</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Виды велосипедов</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Видео про велосипеды</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
-          </li>
-        </ul>
-
-        <button type="button" class="menu__toggle button" aria-label="Открыть меню"></button>
-      </nav>
-
-
       <div class="header__about">
         <a href="#" class="header__logo logo">
           <img src="img/logo.svg" alt="Логотип Moon">
@@ -55,7 +54,7 @@
           <label class="visually-hidden" for="phone">Ваш телефон (обязательно)</label>
           <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="(\+7|8)\d{10}">
 
-          <button class="button" type="submit">Подобрать велосипед мечты</button>
+          <button class="button button--main" type="submit">Подобрать велосипед мечты</button>
         </form>
       </div>
     </div>
@@ -139,7 +138,7 @@
             <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x"> -->
-            <img width="929" height="522" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео про велосипеды">
+            <img width="929" height="522" src="img/video-desktop@1x.jpg" srcset="img/video-desktop@2x.jpg 2x" alt="Видео про велосипеды">
           </picture>
         </div>
       </div>
@@ -152,14 +151,14 @@
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
 
       <div class="footer__map map">
-        <iframe class="contacts__map-frame" src="#" allowfullscreen aria-hidden="false" tabindex="0" title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19"></iframe>
+        <!-- <iframe src="#" allowfullscreen aria-hidden="false" tabindex="0" title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19"></iframe> -->
         <picture>
           <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x"> -->
-          <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
+          <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg 2x"
           width="957" height="530" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19">
         </picture>
       </div>
@@ -174,7 +173,7 @@
           </a>
         </li>
         <li class="contacts__item">
-          <a class="contacts__link" href="tel:+749978468446">
+          <a class="contacts__link contacts__link--phone" href="tel:+749978468446">
             <svg width="22" height="24">
               <use xlink:href="#"></use>
             </svg>
