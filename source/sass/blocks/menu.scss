@@ -1,6 +1,13 @@
 .menu {
   @media #{$screen-tablet} {
     position: relative;
+
+    background-color: $white;
+
+    &--opened {
+      position: absolute;
+      width: 100%;
+    }
   }
 }
 
@@ -18,15 +25,13 @@
 
   @media #{$screen-tablet} {
     display: block;
+
     width: auto;
-    // min-height: 568px;
     height: 100vh;
 
     margin: 0;
     padding-top: 100px;
-    // padding-bottom: 138px;
 
-    background-color: $white;
     border: none;
 
     .menu--closed & {
