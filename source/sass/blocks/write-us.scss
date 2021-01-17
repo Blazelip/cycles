@@ -1,6 +1,11 @@
 .write-us {
+
   input {
-    padding: 12px 30px;
+    @include fz-lh(15px, 160%);
+
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 11px 28px;
 
     background-color: $white;
     border: 1px solid $input-border-color;

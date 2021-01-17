@@ -7,6 +7,7 @@ $tablet-width-only: 1023px;
 
 $screen-mobile: (max-width: $mobile-width-only);
 $screen-tablet: (max-width: $tablet-width-only);
+$screen-only-desktop: (min-width: $desktop-width);
 
 $white: #ffffff;
 $black: #000000;

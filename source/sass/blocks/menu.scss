@@ -32,6 +32,8 @@
 
     .menu--opened & {
       position: absolute;
+      left: 0;
+      top: 0;
     }
 
     .menu--closed & {
@@ -41,6 +43,10 @@
     .menu--nojs & {
       position: static;
     }
+  }
+
+  @media #{$screen-mobile} {
+    height: 568px;
   }
 }
 
@@ -60,12 +66,37 @@
   &:hover,
   &:focus {
     color: rgba($cyan, 1);
+
+    @media #{$screen-only-desktop} {
+      margin-bottom: -1px;
+
+      border-bottom: 1px solid $cyan;
+    }
   }
 
   @media #{$screen-tablet} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     padding: 17px 16px;
 
     color: $mobile-menu-items;
+
+    &::after {
+      content: "";
+
+      width: 25px;
+      height: 25px;
+
+      background-image: url("../../img/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::after:hover {
+        fill: red;
+      }
+    }
   }
 }
 

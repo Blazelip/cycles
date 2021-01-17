@@ -14,6 +14,9 @@
   &--main {
     @include fz-lh(15px, 140%);
 
+    width: 100%;
+    padding: 15px 28px;
+
     color: $common-text;
     font-weight: 600;
     text-align: center;
