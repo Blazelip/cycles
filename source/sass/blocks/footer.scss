@@ -1,8 +1,20 @@
 .footer {
+  padding-top: 125px;
+  padding-bottom: 98px;
+
+  @media #{$screen-tablet} {
+    padding-top: 53px;
+  }
+
+  @media #{$screen-mobile} {
+    padding-top: 51px;
+  }
+
   h2 {
     @include fz-lh(30px, 100%);
 
     margin: 0;
+    margin-bottom: 30px;
 
     color: $title-text;
     font-weight: 600;
@@ -10,9 +22,11 @@
 
     @media #{$screen-tablet} {
       @include fz-lh(24px, 125%);
+
+      margin-bottom: 20px;
     }
 
-    @media #{$screen-tablet} {
+    @media #{$screen-mobile} {
       @include fz-lh(18px, 167%);
     }
   }
@@ -21,15 +35,45 @@
     @include fz-lh(17px, 182%);
 
     margin: 0;
+    margin-bottom: 41px;
 
     color: rgba($common-text, 0.7);
     text-align: center;
+
+    @media #{$screen-tablet} {
+      margin-bottom: 20px;
+    }
+
+    @media #{$screen-mobile} {
+      margin-bottom: 25px;
+    }
   }
 }
 
 .footer__map {
+  margin-bottom: 38px;
+
+  @media #{$screen-tablet} {
+    margin-bottom: 20px;
+  }
+
+  @media #{$screen-mobile} {
+    margin: 0 -15px 33px;
+  }
+
   img {
     display: block;
+    margin: 0 auto;
+
+    @media #{$screen-tablet} {
+      width: 698px;
+      height: 545px;
+    }
+
+    @media #{$screen-mobile} {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 

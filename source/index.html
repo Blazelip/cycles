@@ -15,7 +15,7 @@
 </head>
 <body class="page">
   <header class="header">
-    <nav class="header__nav menu menu--opened menu--noj">
+    <nav class="header__nav menu menu--closed menu--noj">
       <ul class="menu__list list list--resetted">
         <li class="menu__item">
           <a class="menu__link" href="#">О нас</a>
@@ -135,9 +135,9 @@
           <picture>
             <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x"> -->
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x"> -->
+            <source media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img width="929" height="522" src="img/video-desktop@1x.jpg" srcset="img/video-desktop@2x.jpg 2x" alt="Видео про велосипеды">
           </picture>
         </div>
@@ -153,11 +153,11 @@
       <div class="footer__map map">
         <!-- <iframe src="#" allowfullscreen aria-hidden="false" tabindex="0" title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19"></iframe> -->
         <picture>
-          <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x"> -->
+          <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x"> -->
+          <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg 2x"
           width="957" height="530" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19">
         </picture>
@@ -167,7 +167,7 @@
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru">
             <svg width="26" height="21">
-              <use xlink:href="#"></use>
+              <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
             </svg>
             <span>puteshestviemechta@gmail.ru</span>
           </a>
@@ -175,7 +175,7 @@
         <li class="contacts__item">
           <a class="contacts__link contacts__link--phone" href="tel:+749978468446">
             <svg width="22" height="24">
-              <use xlink:href="#"></use>
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
             </svg>
             <span>+7 (499) -784-684-46</span>
           </a>

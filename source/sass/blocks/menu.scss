@@ -63,13 +63,12 @@
   padding: 21px 0 9px 0;
   color: rgba($white, 0.7);
 
-  &:hover,
-  &:focus {
-    color: rgba($cyan, 1);
 
-    @media #{$screen-only-desktop} {
+  @media #{$screen-only-desktop} {
+    &:hover,
+    &:focus {
       margin-bottom: -1px;
-
+      color: rgba($cyan, 1);
       border-bottom: 1px solid $cyan;
     }
   }
@@ -92,10 +91,6 @@
       background-image: url("../../img/arrow-down.svg");
       background-repeat: no-repeat;
       background-position: center;
-
-      &::after:hover {
-        fill: red;
-      }
     }
   }
 }
@@ -154,4 +149,3 @@
     transform: rotate(-45deg);
   }
 }
-
