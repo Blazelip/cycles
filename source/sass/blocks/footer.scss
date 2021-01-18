@@ -1,12 +1,14 @@
 .footer {
-  padding-top: 249px;
+  padding-top: 251px;
   padding-bottom: 98px;
 
   @media #{$screen-tablet} {
+    padding-bottom: 53px;
     padding-top: 155px;
   }
 
   @media #{$screen-mobile} {
+    padding-bottom: 51px;
     padding-top: 119px;
   }
 
@@ -34,35 +36,41 @@
   p {
     @include fz-lh(17px, 182%);
 
-    margin: 0;
-    margin-bottom: 41px;
+    width: 555px;
+    margin: 0 auto 41px;
+    padding-right: 15px;
 
     color: rgba($common-text, 0.7);
     text-align: center;
+    letter-spacing: normal;
 
     @media #{$screen-tablet} {
+      width: auto;
       margin-bottom: 20px;
+      padding-right: 0;
     }
 
     @media #{$screen-mobile} {
-      margin-bottom: 25px;
+      width: 270px;
+      margin-bottom: 22px;
     }
   }
 }
 
 .footer__map {
-  margin-bottom: 38px;
+  position: relative;
+
+  margin-bottom: 35px;
 
   @media #{$screen-tablet} {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   @media #{$screen-mobile} {
-    margin: 0 -15px 33px;
+    margin: 0 -15px 31px;
   }
 
   img {
-    display: block;
     margin: 0 auto;
 
     @media #{$screen-tablet} {
@@ -78,5 +86,9 @@
 }
 
 .footer__contacts {
+  margin-right: 20px;
 
+  @media #{$screen-mobile} {
+    margin-right: 0;
+  }
 }

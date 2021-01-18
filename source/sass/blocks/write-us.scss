@@ -16,6 +16,14 @@
 
       color: rgba($placeholder-color, 0.5);
     }
+
+    @media #{$screen-tablet} {
+      padding: 11px 20px;
+    }
+
+    @media #{$screen-mobile} {
+      padding: 11px 27px;
+    }
   }
 
   button {

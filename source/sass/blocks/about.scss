@@ -1,10 +1,14 @@
 .about {
   padding-top: 150px;
-  padding-bottom: 130px;
+  padding-bottom: 153px;
 
   @media #{$screen-tablet} {
-    padding-top: 70px;
+    padding-top: 35px;
     padding-bottom: 70px;
+  }
+
+  @media #{$screen-mobile} {
+    padding-bottom: 79px;
   }
 
   h2 {
@@ -27,17 +31,17 @@
 .about__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px 38px;
+  gap: 30px 40px;
 
   margin: 0 auto;
 
   @media #{$screen-tablet} {
     grid-template-columns: 1fr 1fr;
-    gap: 40px 30px;
+    gap: 38px 39px;
     width: 566px;
   }
 
-  @media #{$screen-tablet} {
+  @media #{$screen-mobile} {
     grid-template-columns: 1fr;
     gap: 35px 0;
     width: 280px;
@@ -49,6 +53,10 @@
 
   text-align: center;
   letter-spacing: -0.5px;
+
+  @media #{$screen-mobile} {
+    @include fz-lh(18px, 189%);
+  }
 
   span {
     @include fz-lh(28px, 136%);

@@ -19,6 +19,8 @@
   border-bottom: 1px solid rgba($white, 0.2);
 
   @media #{$screen-tablet} {
+    @include fz-lh(20px, 140%);
+
     display: block;
 
     width: 100%;
@@ -26,6 +28,8 @@
 
     margin: 0;
     padding-top: 100px;
+
+    letter-spacing: 0.3px;
 
     background-color: $white;
     border: none;
@@ -52,7 +56,7 @@
 
 .menu__item {
   @media #{$screen-tablet} {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
     background-color: $mobile-menu-items-bg;
   }
@@ -60,7 +64,7 @@
 
 .menu__link {
   display: block;
-  padding: 21px 0 9px 0;
+  padding: 21px 20px 9px 20px;
   color: rgba($white, 0.7);
 
 
@@ -134,9 +138,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 15px;
-    left: 17px;
-    width: 22px;
+    top: 25px;
+    left: 10px;
+    width: 31px;
     height: 2px;
     background-color: $black;
   }

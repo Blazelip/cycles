@@ -13,7 +13,7 @@
 
   @media #{$screen-tablet} {
     background: none;
-    min-height: none;
+    min-height: auto;
   }
 
   @media #{$screen-mobile} {
@@ -55,6 +55,8 @@
 
     @media #{$screen-tablet} {
       @include fz-lh(30px, 140%);
+
+      margin-bottom: 20px;
 
       text-align: center;
     }
@@ -104,12 +106,17 @@
   margin-bottom: 30px;
 
   @media #{$screen-tablet} {
-    margin-bottom: 89px;
+    margin-bottom: 86px;
+  }
+
+  @media #{$screen-mobile} {
+    margin-bottom: 72px;
   }
 }
 
 .header__write-us {
   width: 327px;
+  padding-top: 4px;
 
   p {
     @include fz-lh(17px, 165%);
@@ -124,7 +131,13 @@
     @media #{$screen-tablet} {
       @include fz-lh(18px, 156%);
 
+      margin-bottom: 30px;
+
       color: $common-text;
+    }
+
+    @media #{$screen-mobile} {
+      margin-bottom: 19px;
     }
   }
 
@@ -135,7 +148,7 @@
     padding-bottom: 35px;
   }
 
-  @media #{$screen-tablet} {
+  @media #{$screen-mobile} {
     width: auto;
     max-width: 321px;
     padding-left: 15px;

@@ -1,6 +1,7 @@
 .video {
   background-color: $background-safe;
   padding-top: 120px;
+  padding-bottom: 1px;
 
   text-align: center;
 
@@ -43,7 +44,7 @@
     @media #{$screen-mobile} {
       width: auto;
       max-width: 340px;
-      margin-bottom: 50px;
+      margin-bottom: 53px;
     }
   }
 }
@@ -51,23 +52,24 @@
 .video__container {
   position: relative;
 
-  padding-bottom: 1px;
+  width: 929px;
+  height: 522px;
+  margin: 0 auto -100px;
+
+  @media #{$screen-tablet} {
+    width: 503px;
+    height: 282px;
+    margin-bottom: -85px;
+  }
+
+  @media #{$screen-mobile} {
+    width: 288px;
+    height: 162px;
+    margin-bottom: -50px;
+  }
 
   img {
     display: block;
-    margin: 0 auto -100px;
-
-    @media #{$screen-tablet} {
-      width: 503px;
-      height: 282px;
-      margin-bottom: -85px;
-    }
-
-    @media #{$screen-mobile} {
-      width: 288px;
-      height: 162px;
-      margin-bottom: -50px;
-    }
   }
 }
 
@@ -97,6 +99,16 @@
 
   &:active {
     transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  @media #{$screen-tablet} {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media #{$screen-mobile} {
+    width: 65px;
+    height: 65px;
   }
 
   svg {
