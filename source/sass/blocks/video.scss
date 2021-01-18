@@ -1,14 +1,25 @@
 .video {
   background-color: $background-safe;
+  padding-top: 120px;
+
+  text-align: center;
+
+  @media #{$screen-tablet} {
+    padding-top: 70px;
+  }
+
+  @media #{$screen-mobile} {
+    padding-top: 84px;
+  }
 
   h2 {
     @include fz-lh(30px, 100%);
 
     margin: 0;
+    margin-bottom: 20px;
 
     color: $common-text-white;
     font-weight: 600;
-    text-align: center;
 
     @media #{$screen-tablet} {
       @include fz-lh(24px, 125%);
@@ -17,21 +28,80 @@
 
   p {
     @include fz-lh(16px, 175%);
-    margin: 0;
+
+    width: 340px;
+    margin: 0 auto 56px;
 
     font-weight: 300;
-    text-align: center;
     color: rgba($common-text-white, 0.7);
+
+    @media #{$screen-tablet} {
+      width: 429px;
+      margin-bottom: 40px;
+    }
+
+    @media #{$screen-mobile} {
+      width: auto;
+      max-width: 340px;
+      margin-bottom: 50px;
+    }
   }
 }
 
 .video__container {
+  position: relative;
+
+  padding-bottom: 1px;
 
   img {
     display: block;
+    margin: 0 auto -100px;
+
+    @media #{$screen-tablet} {
+      width: 503px;
+      height: 282px;
+      margin-bottom: -85px;
+    }
+
+    @media #{$screen-mobile} {
+      width: 288px;
+      height: 162px;
+      margin-bottom: -50px;
+    }
   }
 }
 
 .video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+  display: block;
+  width: 65px;
+  height: 65px;
+  padding: 23px;
+  padding-left: 29px;
+
+  background-color: $video-btn;
+  border: none;
+  border-radius: 50%;
+
+  outline: none;
+  transition: 0.3s ease;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  svg {
+    width: 13px;
+    height: 19px;
+    fill: #070707;
+  }
 }

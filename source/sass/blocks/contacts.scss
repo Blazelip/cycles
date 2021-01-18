@@ -5,7 +5,6 @@
   flex-wrap: wrap;
 
   line-height: 22px;
-  outline: 1px solid tomato;
 
   @media #{$screen-mobile} {
     flex-direction: column;
