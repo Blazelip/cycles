@@ -62,7 +62,7 @@ if (storagePhone) {
   phone.value = storagePhone;
 }
 
-form.addEventListener("submit", (evt) => {
+form.addEventListener(`submit`, (evt) => {
   if (!name.value || !phone.value) {
     evt.preventDefault();
     if (!phone.value) {
