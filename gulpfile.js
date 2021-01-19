@@ -34,10 +34,8 @@ gulp.task('css', function () {
 
 gulp.task('javascript', function () {
   return gulp.src([
-    './source/js/script.js',
-    // './source/js/burger-menu.js',
-    // './source/js/form.js',
-    // './source/js/scroll.js',
+    './source/js/menu.js',
+    './source/js/form.js'
   ])
       .pipe(concat('main.js'))
       .pipe(gulp.dest('build/js'));

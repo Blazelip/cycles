@@ -1,4 +1,9 @@
 .write-us {
+  &--error,
+  &--error:hover,
+  &--error:focus {
+    border-color: red;
+  }
 
   input {
     @include fz-lh(15px, 160%);
@@ -10,6 +15,7 @@
     background-color: $white;
     border: 1px solid $input-border-color;
     border-radius: 4px;
+    outline: none;
 
     &::placeholder {
       @include fz-lh(15px, 160%);
@@ -25,9 +31,4 @@
       padding: 11px 27px;
     }
   }
-
-  button {
-
-  }
 }
-
