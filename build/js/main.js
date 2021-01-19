@@ -54,13 +54,8 @@ try {
     isStorageSupport = false;
 }
 
-if (storageName) {
-  name.value = storageName;
-}
-
-if (storagePhone) {
-  phone.value = storagePhone;
-}
+name.value = storageName || ``;
+phone.value = storagePhone || ``;
 
 form.addEventListener(`submit`, (evt) => {
   if (!name.value || !phone.value) {
