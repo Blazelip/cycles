@@ -34,7 +34,7 @@
 
   color: rgba($common-text, 0.5);
 
-    @media #{$screen-only-desktop} {
+  @media #{$screen-only-desktop} {
     &:hover,
     &:focus {
       color: rgba($cyan, 1);
@@ -49,9 +49,5 @@
   svg {
     fill: none;
     margin-right: 15px;
-  }
-
-  span {
-
   }
 }
