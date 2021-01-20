@@ -657,7 +657,8 @@ img {
           transform: rotate(-45deg); }
 
 .logo {
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: middle; }
 
 .write-us--error, .write-us--error:hover, .write-us--error:focus {
   border-color: red; }

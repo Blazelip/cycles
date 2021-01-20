@@ -3,7 +3,7 @@
 (() => {
 
 const menu = document.querySelector(`.menu`);
-const menuToggle = menu.querySelector(`.menu__toggle`);
+const menuToggle = document.querySelector(`.menu__toggle`);
 
 const onMenuPressEsc = (evt) => {
   if (evt.key === `Escape`) {
@@ -23,14 +23,16 @@ const closeMenu = () => {
   document.removeEventListener(`keydown`, onMenuPressEsc);
 };
 
-menu.classList.remove(`menu--nojs`);
+if (menu && menuToggle) {
+  menu.classList.remove(`menu--nojs`);
 
-menuToggle.addEventListener(`click`, () => {
-  if (menu.classList.contains(`menu--closed`)) {
-    openMenu();
-  } else {
-    closeMenu();
-  }
-});
+  menuToggle.addEventListener(`click`, () => {
+    if (menu.classList.contains(`menu--closed`)) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
+  });
+}
 
 })();

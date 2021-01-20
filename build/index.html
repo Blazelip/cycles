@@ -7,10 +7,7 @@
   <meta name="keyowrds" content="Какие-то ключевые слова через запятую">
   <meta name="description" content="Какое-то описание сайта">
   <title>HTML Academy: Магазин велосипедов</title>
-  <link rel="preload" href="fonts/open-sans-light.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/open-sans-regular.woff2" as="font" crossorigin="">
-  <link rel="preload" href="fonts/open-sans-semibold.woff2" as="font" crossorigin="">
-  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
@@ -37,7 +34,7 @@
     <div class="header__wrapper">
       <div class="header__about">
         <a class="header__logo logo">
-          <img src="img/logo.svg" alt="Логотип Moon">
+          <img src="img/logo.svg" width="68" height="21" alt="Логотип Moon">
         </a>
 
         <h1>Мы продаем велосипеды</h1>
@@ -97,6 +94,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/road-bike-mobile@1x.webp 1x, img/road-bike-mobile@2x.webp 2x">
                 <source type="image/webp" srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/road-bike-mobile@1x.jpg 1x, img/road-bike-mobile@2x.jpg 2x">
+                <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/road-bike-desktop@1x.jpg" srcset="img/road-bike-desktop@2x.jpg 2x" width="342" height="503" alt="Дорожные велосипеды">
               </picture>
 
@@ -109,6 +107,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/mountain-bike-mobile@1x.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
                 <source type="image/webp" srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/mountain-bike-mobile@1x.jpg 1x, img/mountain-bike-mobile@2x.jpg 2x">
+                <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/mountain-bike-desktop@1x.jpg" srcset="img/mountain-bike-desktop@2x.jpg 2x" width="342" height="566" alt="Горные велосипеды">
               </picture>
 
@@ -121,6 +120,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/child-bike-mobile@1x.webp 1x, img/child-bike-mobile@2x.webp 2x">
                 <source type="image/webp" srcset="img/child-bike-desktop@1x.webp 1x, img/child-bike-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/child-bike-mobile@1x.jpg 1x, img/child-bike-mobile@2x.jpg 2x">
+                <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/child-bike-desktop@1x.jpg" srcset="img/child-bike-desktop@2x.jpg 2x" width="342" height="513" alt="Детские велосипеды">
               </picture>
 
@@ -148,6 +148,7 @@
             <source type="image/webp" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
             <source media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x">
             <source media="(max-width: 1023px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <!-- 1х: 929px; 2x: 1858px -->
             <img width="929" height="522" src="img/video-desktop@1x.jpg" srcset="img/video-desktop@2x.jpg 2x" alt="Видео про велосипеды">
           </picture>
         </div>
@@ -168,6 +169,7 @@
           <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
           <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <!-- 1х: 957px; 2x: 1914px -->
           <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg 2x" width="957" height="530" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19">
         </picture>
       </div>
