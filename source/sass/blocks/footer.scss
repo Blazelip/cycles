@@ -13,7 +13,7 @@
   }
 
   h2 {
-    @include fz-lh(30px, 100%);
+    @include font-mixin(30px, 100%);
 
     margin: 0;
     margin-bottom: 30px;
@@ -23,18 +23,18 @@
     text-align: center;
 
     @media #{$screen-tablet} {
-      @include fz-lh(24px, 125%);
+      @include font-mixin(24px, 125%);
 
       margin-bottom: 20px;
     }
 
     @media #{$screen-mobile} {
-      @include fz-lh(18px, 167%);
+      @include font-mixin(18px, 167%);
     }
   }
 
   p {
-    @include fz-lh(17px, 182%);
+    @include font-mixin(17px, 182%);
 
     width: 555px;
     margin: 0 auto 41px;

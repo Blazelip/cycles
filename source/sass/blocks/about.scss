@@ -12,7 +12,7 @@
   }
 
   h2 {
-    @include fz-lh(30px, 100%);
+    @include font-mixin(30px, 100%);
 
     margin: 0;
     margin-bottom: 50px;
@@ -21,7 +21,7 @@
     text-align: center;
 
     @media #{$screen-tablet} {
-      @include fz-lh(24px, 171%);
+      @include font-mixin(24px, 171%);
 
       margin-bottom: 30px;
     }
@@ -49,17 +49,17 @@
 }
 
 .about__item {
-  @include fz-lh(22px, 155%);
+  @include font-mixin(22px, 155%);
 
   text-align: center;
   letter-spacing: -0.5px;
 
   @media #{$screen-mobile} {
-    @include fz-lh(18px, 189%);
+    @include font-mixin(18px, 189%);
   }
 
   span {
-    @include fz-lh(28px, 136%);
+    @include font-mixin(28px, 136%);
 
     display: block;
     margin-bottom: 14px;

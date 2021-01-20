@@ -45,7 +45,7 @@
   width: 390px;
 
   h1 {
-    @include fz-lh(46px, 139%);
+    @include font-mixin(46px, 139%);
 
     margin: 0;
     margin-bottom: 24px;
@@ -54,7 +54,7 @@
     color: $common-text-white;
 
     @media #{$screen-tablet} {
-      @include fz-lh(30px, 140%);
+      @include font-mixin(30px, 140%);
 
       margin-bottom: 20px;
 
@@ -63,7 +63,7 @@
   }
 
   p {
-    @include fz-lh(20px, 160%);
+    @include font-mixin(20px, 160%);
 
     margin: 0;
 
@@ -71,7 +71,7 @@
     color: rgba($common-text-white, 0.8);
 
     @media #{$screen-tablet} {
-      @include fz-lh(18px, 178%);
+      @include font-mixin(18px, 178%);
 
       max-width: 435px;
       margin: 0 auto;
@@ -119,7 +119,7 @@
   padding-top: 4px;
 
   p {
-    @include fz-lh(17px, 165%);
+    @include font-mixin(17px, 165%);
 
     margin: 0;
     margin-bottom: 20px;
@@ -129,7 +129,7 @@
     color: $common-text-white;
 
     @media #{$screen-tablet} {
-      @include fz-lh(18px, 156%);
+      @include font-mixin(18px, 156%);
 
       margin-bottom: 30px;
 

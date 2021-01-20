@@ -14,7 +14,7 @@
   }
 
   h2 {
-    @include fz-lh(30px, 100%);
+    @include font-mixin(30px, 100%);
 
     margin: 0;
     margin-bottom: 20px;
@@ -23,12 +23,12 @@
     font-weight: 600;
 
     @media #{$screen-tablet} {
-      @include fz-lh(24px, 125%);
+      @include font-mixin(24px, 125%);
     }
   }
 
   p {
-    @include fz-lh(16px, 175%);
+    @include font-mixin(16px, 175%);
 
     width: 340px;
     margin: 0 auto 56px;

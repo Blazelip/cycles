@@ -12,7 +12,7 @@
   cursor: pointer;
 
   &--main {
-    @include fz-lh(15px, 140%);
+    @include font-mixin(15px, 140%);
 
     width: 100%;
     padding: 15px 28px;
