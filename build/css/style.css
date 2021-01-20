@@ -309,28 +309,28 @@ template {
   display: none; }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "opensans";
   font-display: swap;
   font-style: normal;
   font-weight: 300;
   src: local("Open Sans"), url("../../fonts/open-sans-light.woff2") format("woff2"), url("../../fonts/open-sans-light.woff") format("woff"); }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "opensans";
   font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"), url("../../fonts/open-sans-regular.woff2") format("woff2"), url("../../fonts/open-sans-regular.woff") format("woff"); }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "opensans";
   font-display: swap;
   font-style: normal;
   font-weight: 600;
   src: local("Open Sans"), url("../../fonts/open-sans-semibold.woff2") format("woff2"), url("../../fonts/open-sans-semibold.woff") format("woff"); }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "opensans";
   font-display: swap;
   font-style: normal;
   font-weight: 700;
@@ -358,7 +358,7 @@ img {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Verdana", sans-serif;
+  font-family: "opensans", "Verdana", sans-serif;
   font-size: 16px;
   letter-spacing: -0.005em;
   font-weight: 400;
