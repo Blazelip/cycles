@@ -309,32 +309,32 @@ template {
   display: none; }
 
 @font-face {
-  font-family: "opensans";
+  font-family: "open-sans";
   font-display: swap;
   font-style: normal;
   font-weight: 300;
-  src: local("Open Sans"), url("../../fonts/open-sans-light.woff2") format("woff2"), url("../../fonts/open-sans-light.woff") format("woff"); }
+  src: local("Open Sans"), url("../fonts/open-sans-light.woff2") format("woff2"), url("../fonts/open-sans-light.woff") format("woff"); }
 
 @font-face {
-  font-family: "opensans";
+  font-family: "open-sans";
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: local("Open Sans"), url("../../fonts/open-sans-regular.woff2") format("woff2"), url("../../fonts/open-sans-regular.woff") format("woff"); }
+  src: local("Open Sans"), url("../fonts/open-sans-regular.woff2") format("woff2"), url("../fonts/open-sans-regular.woff") format("woff"); }
 
 @font-face {
-  font-family: "opensans";
+  font-family: "open-sans";
   font-display: swap;
   font-style: normal;
   font-weight: 600;
-  src: local("Open Sans"), url("../../fonts/open-sans-semibold.woff2") format("woff2"), url("../../fonts/open-sans-semibold.woff") format("woff"); }
+  src: local("Open Sans"), url("../fonts/open-sans-semibold.woff2") format("woff2"), url("../fonts/open-sans-semibold.woff") format("woff"); }
 
 @font-face {
-  font-family: "opensans";
+  font-family: "open-sans";
   font-display: swap;
   font-style: normal;
   font-weight: 700;
-  src: local("Open Sans"), url("../../fonts/open-sans-bold.woff2") format("woff2"), url("../../fonts/open-sans-bold.woff") format("woff"); }
+  src: local("Open Sans"), url("../fonts/open-sans-bold.woff2") format("woff2"), url("../fonts/open-sans-bold.woff") format("woff"); }
 
 *,
 *::before,
@@ -358,7 +358,7 @@ img {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "opensans", "Verdana", sans-serif;
+  font-family: "open-sans", "Verdana", sans-serif;
   font-size: 16px;
   letter-spacing: -0.005em;
   font-weight: 400;
@@ -411,13 +411,13 @@ img {
 .header {
   min-height: 825px;
   background-color: #131314;
-  background-image: url("../../img/background@1x.jpg");
+  background-image: url("../img/background@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .header {
-      background-image: url("../../img/background@2x.jpg"); } }
+      background-image: url("../img/background@2x.jpg"); } }
   @media (max-width: 1023px) {
     .header {
       background: none;
@@ -541,7 +541,7 @@ img {
 .menu__list {
   font-size: 16px;
   line-height: 200%;
-  z-index: 2;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,16 +567,13 @@ img {
       background-color: #ffffff;
       border: none; }
       .menu--opened .menu__list {
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0; }
       .menu--closed .menu__list {
         display: none; }
       .menu--nojs .menu__list {
         position: static; } }
-  @media (max-width: 767px) {
-    .menu__list {
-      height: 568px; } }
 
 @media (max-width: 1023px) {
   .menu__item {

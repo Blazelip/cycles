@@ -2,13 +2,13 @@
   min-height: 825px;
 
   background-color: $background-safe;
-  background-image: url("../../img/background@1x.jpg");
+  background-image: url("../img/background@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/background@2x.jpg");
+    background-image: url("../img/background@2x.jpg");
   }
 
   @media #{$screen-tablet} {

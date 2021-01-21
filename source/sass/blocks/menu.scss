@@ -7,7 +7,7 @@
 .menu__list {
   @include font-mixin(16px, 200%);
 
-  z-index: 2;
+  z-index: 5;
 
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +35,7 @@
     border: none;
 
     .menu--opened & {
-      position: absolute;
+      position: fixed;
       left: 0;
       top: 0;
     }
@@ -47,10 +47,6 @@
     .menu--nojs & {
       position: static;
     }
-  }
-
-  @media #{$screen-mobile} {
-    height: 568px;
   }
 }
 
