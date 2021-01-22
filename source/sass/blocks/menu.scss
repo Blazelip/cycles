@@ -26,6 +26,7 @@
     @include font-mixin(20px, 140%);
 
     display: block;
+    overflow-y: scroll;
 
     width: 100%;
     height: 100vh;
