@@ -1,6 +1,10 @@
 .menu {
+  margin-top: 12px;
+
   @media #{$screen-tablet} {
     position: relative;
+
+    margin-top: 0;
   }
 }
 
@@ -60,7 +64,7 @@
 
 .menu__link {
   display: block;
-  padding: 21px 20px 9px 20px;
+  padding: 9px 20px;
   color: rgba($white, 0.7);
 
 
@@ -99,7 +103,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 10;
 
   display: none;
   width: 50px;
