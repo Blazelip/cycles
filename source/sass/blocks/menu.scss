@@ -55,8 +55,11 @@
 }
 
 .menu__item {
+  padding: 9px 20px;
+
   @media #{$screen-tablet} {
     margin-bottom: 28px;
+    padding: 0;
 
     background-color: $mobile-menu-items-bg;
   }
@@ -64,16 +67,12 @@
 
 .menu__link {
   display: block;
-  padding: 9px 20px;
   color: rgba($white, 0.7);
-
 
   @media #{$screen-only-desktop} {
     &:hover,
     &:focus {
-      margin-bottom: -1px;
       color: rgba($cyan, 1);
-      border-bottom: 1px solid $cyan;
     }
   }
 
